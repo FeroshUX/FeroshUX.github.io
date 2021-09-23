@@ -1,0 +1,232 @@
+* {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+:root {
+    --background: #14171f;
+    --interactive: #ff1493;
+    --text-primary: #FFFFFF;
+    --text-link: #81d8d0;
+    --text-header-primary: #e5e4ff;
+    --text-header-secondary: #727296;
+}
+
+#siteMount {
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    background-color: var(--background);
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 900;
+}
+
+/* Glowy header animation */
+@keyframes glowy {
+    from {
+        text-shadow: 0 0 25px rgba(130, 142, 253, 0.7);
+    } to {
+        text-shadow: 0 0 45px rgba(184, 135, 241, 0.9);
+        color: #CFCEFF
+    }
+}
+
+.glowy-header {
+    color: var(--text-header-primary);
+    font-size: 32px; /* robo changed this from 36 to 32 */
+    animation: glowy 1s ease-in-out infinite alternate;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.content {
+    color: #CFCEFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 4em;
+    width: 55%;
+}
+
+html, body {
+    height: 100%;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: #727296;
+    font-weight: bold;
+}
+.left-wrapper {
+    padding-right: 2em;
+    flex:6;
+}
+
+.right-wrapper {
+    border-left: 2px solid #444458;
+    padding-left: 2.5em;
+    flex: 8;
+}
+
+.line {
+    padding: 0.25em;
+}
+
+.bigline {
+    padding-bottom: 0.35em;
+    /* padding-right: 0.25em; */
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+}
+
+.linky {
+    color: var(--text-link);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linky:hover {
+    text-decoration: underline dotted;
+}
+/*
+.left-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-item-container {
+    width: auto;
+}
+
+.left-item {
+    padding-bottom: 10px;
+    align-items: center;
+} */
+
+.logo {
+    width: 100%;
+    object-fit: cover;
+    animation: wobble 5s ease-in-out infinite alternate;
+    -webkit-animation: wobble 5s ease-in-out infinite alternate;
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+
+    to {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+}
+
+.icon-row {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1em;
+}
+
+.icon-wrapper {
+    position: relative;
+    height: 36px;
+    width: 36px;
+    flex: 0 0 auto;
+    margin: 0 15px;
+    transition: ease-in-out 0.2s;
+}
+
+.icon {
+    color: var(--interactive);
+    height: 36px;
+    width: 36px;
+}
+
+.icon-wrapper:hover {
+    transition: ease-in-out 0.2s;
+    transform: scale(1.1);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+ }
+
+/* #left-mount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+} */
+
+.new-badge {
+    margin-left: 8px;
+    padding: 0 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-width: 16px;
+    min-height: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: #282838;
+    text-align: center;
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    text-weight: bold;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+}
