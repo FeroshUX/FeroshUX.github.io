@@ -1,95 +1,144 @@
-<html>
+<html lang="en-US">
 
 <head>
-    <title>nizzium Design</title>
+    <title>Feroshii Design</title>
     <meta charset="utf-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="canonical" href="https://nizzium.systems">
-    
-        <meta name="title" content="nizzium Design">
-        <meta name="description" content="UI/UX design, branding, and graphics.">
-    
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="nizzium Design">
-        <meta property="og:url" content="https://nizzium.systems">
-        <meta property="og:title" content="nizzium Design">
-        <meta property="og:description" content="UI/UX design, branding, and graphics.">
-        <meta property="og:image" content="http://nizzium.systems/siteimage.jpg">
-    
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://nizzium.systems">
-        <meta property="twitter:title" content="nizzium Design">
-        <meta property="twitter:description" content="UI/UX design, branding, and graphics.">
-        <meta property="twitter:image" content="http://nizzium.systems/siteimage.jpg">
-        <meta name="theme-color" content="#46fba4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="canonical" href="https://nizzium.systems">
+
+    <meta name="title" content="Feroshii Design">
+    <meta name="description" content="UI/UX design, branding, and graphics.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Feroshii Design">
+    <meta property="og:url" content="https://nizzium.systems">
+    <meta property="og:title" content="Feroshii Design">
+    <meta property="og:description" content="UI/UX design, branding, and graphics.">
+    <meta property="og:image" content="http://nizzium.systems/siteimage.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nizzium.systems">
+    <meta property="twitter:title" content="Feroshii Design">
+    <meta property="twitter:description" content="UI/UX design, branding, and graphics.">
+    <meta property="twitter:image" content="http://nizzium.systems/siteimage.jpg">
+    <meta name="theme-color" content="#46fba4">
 
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
-        body {
-            background-color: #0d100f;
-            font-family: monospace;
-            color: #FFF;
-            font-weight: bold;
-            font-size: 18px;
-            overflow: hidden;
-            height: 100vh;
-            width: 100vw;
+        @font-face {
+            font-family: Feroshii Header;
+            src: url(./ABCGravity-Normal.otf)
         }
 
-        p,
-        pre {
-            text-align: left;
-            margin: 0.5em auto;
-            max-width: 600px;
-        }
-
-        .background-container {
-            background-image: url(background-wavey.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            justify-content: center;
-            align-items: center;
+        #siteMount {
             display: flex;
-            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            text-rendering: optimizeLegibility;
+            overflow: hidden;
+            background: url(./glowy-background.png), #130F18;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .content {
             width: 100vw;
+            height: 100vh;
+        }
+
+        .page-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 48px;
+            padding-left: 48px;
+        }
+
+        .centered-text {
+            font-size: 7rem;
+            /* margin-bottom: 2rem; */
+            margin-bottom: 48px;
+            font-family: Feroshii Header;
+            text-align: center;
+            width: 50rem;
+            color: #F8F3FF;
+        }
+
+        .centered-undertext {
+            font-size: 1.5rem;
+            text-align: center;
+            color: #BBBBC8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .links-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 4rem;
+            gap: 96px;
+            width: 100%;
+        }
+
+        a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            /* text-decoration: none; */
+        }
+
+        .linky {
+            transition: ease-in-out .5s;
+        }
+
+        .linky:nth-child(1) {
+            color: #5297FF
+        }
+
+        .linky:nth-child(2) {
+            color: #52FF8D
+        }
+
+        .linky:nth-child(3) {
+            color: #FFEE52
+        }
+
+        .linky:hover {
+            letter-spacing: 1.1;
+            transition: ease-in-out .5s;
+        }
+
+        * {
+            user-select: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="background-container">
-    <table width="100%" height="100%" border="0">
-        <tbody>
-            <tr>
-                <td valign="middle" align="center">
-                    <p>
-                        <svg width="640" height="400" viewBox="0 0 640 400" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M254.208 148.64H236.496V203.936L215.76 148.64H198.048V248H215.76V195.008L236.496 248H254.208V148.64ZM266.827 148.64V248H284.395V148.64H266.827ZM339.96 232.016H311.592L339.384 164.624V148.64H295.464V164.624H321.96L294.024 232.016V248H339.96V232.016ZM391.71 232.016H363.342L391.134 164.624V148.64H347.214V164.624H373.71L345.774 232.016V248H391.71V232.016ZM401.124 148.64V248H418.692V148.64H401.124ZM444.449 245.84C448.481 248.144 453.233 249.152 458.417 249.152C463.601 249.152 468.209 248.144 472.385 245.84C476.417 243.536 479.729 240.368 482.033 236.192C484.337 232.16 485.489 227.408 485.489 221.936V148.64H467.777V221.504C467.777 229.28 464.609 233.168 458.417 233.168C455.249 233.168 452.801 232.304 451.361 230.432C449.777 228.56 449.057 225.536 449.057 221.504V148.64H431.345V221.936C431.345 227.408 432.497 232.16 434.801 236.192C437.105 240.368 440.417 243.536 444.449 245.84ZM567.707 148.64H549.995L532.571 201.056L515.291 148.64H497.579V248H515.291V190.256L527.819 228.704H537.323L549.995 189.824V248H567.707V148.64Z"
-                                fill="#46FBA4" />
-                            <path
-                                d="M0 189.909L83.9779 274L100.564 257.602L54.5856 211.773L152 210.511L67.6022 126L51.0166 142.398L96.9945 188.437L0 189.909Z"
-                                fill="#46FBA4" />
-                            <path d="M60.884 173.722L34.8508 174.142L48.0774 160.898L60.884 173.722Z" fill="#46FBA4" />
-                            <path d="M114.63 226.068L90.4862 226.278L102.453 238.051L114.63 226.068Z" fill="#46FBA4" />
-                        </svg>
-
-                    </p>
-                    <p>
-                        I do graphic design, UI/UX design and prototyping, and branding. I designed <a href="https://mechakeys.robolab.io">MechaKeys</a>.
-                    </p>
-                    <p>
-                        <strong>Contact</strong>: You can contact me via email. contact [at] nizzium.systems. Or, if you're adventurous, find me on Twitter @nizziumdesign
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
+    <div tabindex="-1" id="mount">
+        <div class="content" id="content">
+            <div class="page-wrapper">
+                <div class="centered-text">DESIGN FOR THE HUMAN</div>
+                <div class="centered-undertext">This is Feroshii. You can call me Evan. I've been studying graphics design for 4 years.</div>
+                <div class="centered-undertext">Creating brilliant solutions through user-first, empathy-driven,
+                    accessible visual design.</div>
+                <div class="centered-undertext">Understanding audience, purpose, and end-goals for impact.</div>
+                <div class="links-row">
+                    <a class="linky" href="about">Who I am</a>
+                    <a class="linky" href="works">What I've done</a>
+                    <a class="linky" href="principles">Design principles</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
