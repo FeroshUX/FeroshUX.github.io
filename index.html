@@ -39,7 +39,8 @@
             justify-content: center;
         }
 
-        html, body {
+        html,
+        body {
             margin: 0;
             padding: 0;
         }
@@ -87,7 +88,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 4rem;
+            padding-top: 48px;
+            gap: 96px;
+            width: 100%;
+        }
+
+        .icon-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 48px;
             gap: 96px;
             width: 100%;
         }
@@ -95,11 +105,11 @@
         a {
             font-family: 'Poppins', sans-serif;
             font-size: 1.5rem;
-            /* text-decoration: none; */
+            text-decoration: none;
         }
 
         .linky {
-            transition: ease-in-out .5s;
+            transition: ease-in-out .25s;
         }
 
         .linky:nth-child(1) {
@@ -116,8 +126,17 @@
 
         .linky:hover {
             letter-spacing: 1.1;
-            transition: ease-in-out .5s;
+            transition: ease-in-out .25s;
         }
+
+        /* .linky:nth-child(1):hover>.linky-arrow {
+            margin-left: 4px;
+            transition: ease-in-out .25s;
+        }
+
+        .linky:nth-child(1)>.linky-arrow {
+            transition: ease-in-out .25s;
+        } */
 
         * {
             user-select: none;
@@ -129,15 +148,60 @@
     <div tabindex="-1" id="mount">
         <div class="content" id="content">
             <div class="page-wrapper">
+                <div class="icon-row">
+                    <a href="https://linkedin.com/in/">
+                        <div class="icon-wrapper">
+                            <svg class="icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M37.1029 0H3.01524C1.38476 0 0 1.28952 0 2.8781V37.12C0 38.7105 0.908572 40 2.53905 40H36.6267C38.259 40 40 38.7105 40 37.12V2.8781C40 1.28952 38.7352 0 37.1029 0ZM15.2381 15.2381H20.6229V17.9829H20.6819C21.5029 16.5029 23.9276 15 26.9257 15C32.68 15 34.2857 18.0552 34.2857 23.7143V34.2857H28.5714V24.7562C28.5714 22.2229 27.56 20 25.1943 20C22.3219 20 20.9524 21.9448 20.9524 25.1371V34.2857H15.2381V15.2381ZM5.71429 34.2857H11.4286V15.2381H5.71429V34.2857ZM12.1429 8.57143C12.1429 10.5448 10.5448 12.1429 8.57143 12.1429C6.5981 12.1429 5 10.5448 5 8.57143C5 6.5981 6.5981 5 8.57143 5C10.5448 5 12.1429 6.5981 12.1429 8.57143Z"
+                                    fill="#B2B2BF" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Feroshii">
+                        <div class="icon-wrapper">
+                            <svg class="icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20 0C8.95 0 0 8.95 0 20C0 28.85 5.725 36.325 13.675 38.975C14.675 39.15 15.05 38.55 15.05 38.025C15.05 37.55 15.025 35.975 15.025 34.3C10 35.225 8.7 33.075 8.3 31.95C8.075 31.375 7.1 29.6 6.25 29.125C5.55 28.75 4.55 27.825 6.225 27.8C7.8 27.775 8.925 29.25 9.3 29.85C11.1 32.875 13.975 32.025 15.125 31.5C15.3 30.2 15.825 29.325 16.4 28.825C11.95 28.325 7.3 26.6 7.3 18.95C7.3 16.775 8.075 14.975 9.35 13.575C9.15 13.075 8.45 11.025 9.55 8.275C9.55 8.275 11.225 7.75 15.05 10.325C16.65 9.875 18.35 9.65 20.05 9.65C21.75 9.65 23.45 9.875 25.05 10.325C28.875 7.725 30.55 8.275 30.55 8.275C31.65 11.025 30.95 13.075 30.75 13.575C32.025 14.975 32.8 16.75 32.8 18.95C32.8 26.625 28.125 28.325 23.675 28.825C24.4 29.45 25.025 30.65 25.025 32.525C25.025 35.2 25 37.35 25 38.025C25 38.55 25.375 39.175 26.375 38.975C30.3454 37.6346 33.7954 35.0829 36.2396 31.6791C38.6838 28.2752 39.9989 24.1905 40 20C40 8.95 31.05 0 20 0Z"
+                                    fill="#B2B2BF" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/Feroshiii">
+                        <div class="icon-wrapper">
+                            <svg class="icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M39.405 8.22834C38.0133 8.845 36.5183 9.26167 34.9467 9.45C36.55 8.49 37.78 6.96667 38.36 5.15334C36.86 6.04334 35.1983 6.69 33.43 7.03667C32.0133 5.53 29.9967 4.58667 27.7633 4.58667C23.4767 4.58667 20 8.06334 20 12.3533C20 12.96 20.07 13.55 20.2 14.12C13.745 13.795 8.02666 10.7033 4.19666 6.00667C3.52999 7.15667 3.14666 8.49 3.14666 9.91C3.14666 12.6033 4.51833 14.9817 6.59999 16.3733C5.32666 16.3317 4.12999 15.9833 3.08333 15.4017V15.5017C3.08333 19.2633 5.75833 22.4017 9.31166 23.115C8.65833 23.2917 7.97333 23.385 7.26666 23.385C6.76666 23.385 6.27833 23.3383 5.80499 23.2483C6.79333 26.3317 9.65999 28.5783 13.0583 28.6383C10.4 30.7217 7.05166 31.9633 3.41499 31.9633C2.78833 31.9633 2.16999 31.9267 1.56166 31.855C4.99833 34.06 9.07833 35.3433 13.4617 35.3433C27.745 35.3433 35.5533 23.5133 35.5533 13.2533C35.5533 12.92 35.545 12.5833 35.53 12.25C37.0467 11.1533 38.3633 9.78834 39.4017 8.23334L39.405 8.22834Z"
+                                    fill="#B2B2BF" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
                 <div class="centered-text">DESIGN FOR THE HUMAN</div>
-                <div class="centered-undertext">This is Feroshii. You can call me Evan. I've been studying graphics design for 4 years.</div>
+                <div class="centered-undertext">This is Feroshii, or call me Evan. I've been studying graphics design
+                    for 4 years.</div>
                 <div class="centered-undertext">Creating brilliant solutions through user-first, empathy-driven,
                     accessible visual design.</div>
                 <div class="centered-undertext">Understanding audience, purpose, and end-goals for impact.</div>
                 <div class="links-row">
-                    <a class="linky" href="about">Who I am</a>
-                    <a class="linky" href="works">What I've done</a>
-                    <a class="linky" href="principles">Design principles</a>
+                    <a class="linky" href="about">Who I am <svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="currentColor" class="linky-arrow">
+                            <path d="M7 11L10 8L7 5" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg> </a>
+                    <a class="linky" href="works">What I've done <svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="currentColor" class="linky-arrow">
+                            <path d="M7 11L10 8L7 5" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg> </a>
+                    <a class="linky" href="principles">Design principles <svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="currentColor" class="linky-arrow">
+                            <path d="M7 11L10 8L7 5" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg> </a>
                 </div>
             </div>
         </div>
