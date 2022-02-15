@@ -242,6 +242,38 @@ h6 {
     width: 6rem;
 }
 
+.follow-button {
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px 8px 16px;
+    background-color: #f26ea9;
+    color: #090911;
+    border-radius: 6px;
+}
+
+.follow-button:hover {
+    background-color: #ff98dd;
+}
+
+.follow-button-secondary {
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px 8px 16px;
+    background-color: #141424;
+    color: white;
+    border-radius: 6px;
+}
+
+.follow-button-secondary:hover {
+    background-color: #1b1b2c;
+}
+
+.follow-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
 @media(max-width:750px),
 (orientation:portrait) and (pointer:coarse) {
     .app-wrapper {
