@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
     background-color: #090911;
     margin: 0;
     padding: 0;
     color: white;
     font-family: 'Poppins', sans-serif;
     display: flex;
+    overflow-y: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0;
 }
@@ -29,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar {
     width: 10rem;
+    flex-shrink: 0;
 }
 
 .sidebar-menu-with-margin {
@@ -69,116 +77,142 @@ h1, h2, h3, h4, h5, h6 {
 .content-section-inner a:hover {
     color: #ff98dd;
 }
+
 @keyframes fade-in-right {
     from {
-      opacity: 0;
-      transform: translateX(-15px);
+        opacity: 0;
+        transform: translateX(-15px);
     }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
 
-  @keyframes grow-left {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes grow-left {
     from {
-      transform: scaleX(0);
+        transform: scaleX(0);
     }
+
     to {
-      transform: scaleX(1);
+        transform: scaleX(1);
     }
-  }
+}
 
-
-  @keyframes fade-in-down {
+@keyframes fade-in-down {
     from {
-      opacity: 0;
-      transform: translateY(-15px);
+        opacity: 0;
+        transform: translateY(-15px);
     }
+
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
-  #fade-in-first {
+}
+
+.separator-wrapper {
+    width: 1px;
+    background-color: #f26ea9;
+    animation: separate-the-content 1s forwards;
+    position: relative;
+    margin-left: 24px;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+@keyframes separate-the-content {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+#fade-in-first {
     opacity: 0;
     animation: fade-in-right ease 0.4s forwards;
-  }
+}
 
-  #fade-in-second {
+#fade-in-second {
     opacity: 0;
     animation: fade-in-right ease 0.4s forwards;
     animation-delay: 0.15s;
-  }
+}
 
-  .spacer {
-      width: 2rem;
-  }
+.spacer {
+    width: 2rem;
+}
 
-  .content {
-      max-width: 48rem;
-  }
+.content {
+    max-width: 48rem;
+}
 
-  .content-with-margin {
+.content-with-margin {
     margin-top: 32px;
     margin-bottom: 32px;
-  }
+}
 
-  .header {
-      font-size: 24px;
-      font-weight: 700;
-  }
+.header {
+    font-size: 24px;
+    font-weight: 700;
+}
 
-  .mini-header {
+.mini-header {
     font-size: 18px;
     font-weight: 700;
 }
 
-  .with-small-bottom-margin {
-      margin-bottom: 16px;
-  }
+.with-small-bottom-margin {
+    margin-bottom: 16px;
+}
 
-  .with-very-small-bottom-margin {
+.with-very-small-bottom-margin {
     margin-bottom: 4px;
 }
 
 
-  #fade-in-third {
+#fade-in-third {
     opacity: 0;
     animation: fade-in-right ease 0.4s forwards;
     animation-delay: 0.2s;
-  }
+}
 
-  #fade-in-fourth {
+#fade-in-fourth {
     opacity: 0;
     animation: fade-in-down ease 0.4s forwards;
     animation-delay: 0.25s;
-  }
+}
 
-  #fade-in-fifth {
+#fade-in-fifth {
     opacity: 0;
     animation: fade-in-down ease 0.4s forwards;
     animation-delay: 0.3s;
-  }
+}
 
-  .content-section {
+.content-section {
     background-color: #141424;
     padding: 32px;
     border-radius: 6px;
-  }
+    transition: 0.2s ease-in-out;
+}
 
-  .content-section:hover {
+.content-section:hover {
     background-color: #1b1b2c;
     /* outline: 2px solid #f26ea9; */
-    border-left: 4px solid #f26ea9;
-    margin-left: -4px;
-  }
+    /* border-left: 4px solid #f26ea9;
+    margin-left: -4px; */
+    transition: 0.2s ease-in-out;
+}
 
-  .underline{
+.underline {
     position: relative;
-  }
+}
 
-  .underline::before{
+.underline::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -187,36 +221,46 @@ h1, h2, h3, h4, h5, h6 {
     height: 2px;
     background-color: #ff98dd;
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  }
+}
 
-  @media (hover: hover) and (pointer: fine) {
-    .underline:hover::before{
-      left: 0;
-      right: auto;
-      width: 100%;
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
     }
-  }
+}
 
-  .faded-color {
-      color: #b3acaf;
-  }
+.faded-color {
+    color: #b3acaf;
+}
 
-  .monotext {
-      font-family: Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace;
-  }
+.monotext {
+    font-family: Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+}
 
-  .ferosh-logo {
-      width: 6rem;
-  }
+.ferosh-logo {
+    width: 6rem;
+}
 
-  @media(max-width:715px),(orientation:portrait) and (pointer:coarse) {
+@media(max-width:750px),
+(orientation:portrait) and (pointer:coarse) {
     .app-wrapper {
-     margin:1rem;
-     flex-direction:column;
-     align-items:stretch
+        margin: 1rem;
+        flex-direction: column;
+        align-items: stretch
     }
 
     .sidebar-menu-item {
         align-items: center;
-       }
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .separator-wrapper {
+        display: none !important;
+        visibility: 0 !important;
+    }
 }
