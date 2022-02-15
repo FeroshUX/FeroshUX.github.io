@@ -15,7 +15,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+ol,
+a,
+div {
     padding: 0;
     margin: 0;
 }
@@ -25,7 +29,7 @@ h6 {
 }
 
 .app-wrapper {
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -34,13 +38,17 @@ h6 {
 }
 
 .sidebar {
-    width: 10rem;
     flex-shrink: 0;
 }
 
 .sidebar-menu-with-margin {
     margin-top: 32px;
     margin-bottom: 32px;
+}
+
+.sidebar-menu-item {
+    margin-left: 2rem;
+    user-select: none;
 }
 
 .sidebar-menu-item li {
@@ -77,6 +85,7 @@ h6 {
     color: #ff98dd;
 }
 
+
 @keyframes fade-in-right {
     from {
         opacity: 0;
@@ -112,22 +121,26 @@ h6 {
 }
 
 .separator-wrapper {
-    width: 1px;
+    width: 2px;
     background-color: #f26ea9;
-    animation: separate-the-content 1s forwards;
+    animation: separate-the-content 0.4s forwards;
     position: relative;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 48px;
+    margin-right: 48px;
     flex-shrink: 0;
 }
 
 @keyframes separate-the-content {
     0% {
+        opacity: 0;
+        transform: translateX(-15px);
         height: 0px;
     }
 
     100% {
         height: 100%;
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -274,6 +287,12 @@ h6 {
     margin-top: 2rem;
 }
 
+.follow-buttons-in-card {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 @media(max-width:750px),
 (orientation:portrait) and (pointer:coarse) {
     .app-wrapper {
@@ -294,4 +313,26 @@ h6 {
         display: none !important;
         visibility: 0 !important;
     }
+}
+
+.selected-sidebar-menu-item {
+    border-left: 2px solid #ff98dd;
+    padding-left: 0.5rem;
+    pointer-events: none;
+}
+
+.twitter-card {
+    border-right: 4px solid #76c2f5
+}
+
+.youtube-card {
+    border-right: 4px solid #f87474
+}
+
+.github-card {
+    border-right: 4px solid #86b7ee
+}
+
+.discord-card {
+    border-right: 4px solid #8090ec;
 }
