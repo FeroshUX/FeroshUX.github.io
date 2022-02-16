@@ -244,7 +244,7 @@ div {
 }
 
 .faded-color {
-    color: #b3acaf;
+    color: #c9c6c7;
 }
 
 .monotext {
@@ -335,4 +335,22 @@ div {
 
 .discord-card {
     border-right: 4px solid #8090ec;
+}
+
+.gradient-bottom, .gradient-top {
+    height: 3rem;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+.gradient-top {
+    background-image: linear-gradient(to top,hsla(0,0%,8%,0),#090911);
+    top: 0
+}
+
+.gradient-bottom {
+    background-image: linear-gradient(to bottom,hsla(0,0%,8%,0),#090911);
+    bottom: 0;
 }
